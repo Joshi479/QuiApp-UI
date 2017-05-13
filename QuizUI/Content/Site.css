@@ -1,0 +1,314 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Roboto|Ubuntu);
+
+body {
+    background-color: #1d1919;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    padding-bottom: 20px;
+}
+
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #ddd;
+}
+
+a:hover {
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+    .btn:after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+.btn-3 {
+    background: #fcad26;
+    color: #fff;
+}
+
+    .btn-3:hover {
+        background: #f29e0d;
+    }
+
+    .btn-3:active {
+        background: #f58500;
+        top: 2px;
+    }
+
+    .btn-3:before {
+        position: absolute;
+        height: 100%;
+        left: 0;
+        top: 0;
+        line-height: 3;
+        font-size: 140%;
+        width: 60px;
+    }
+
+.btn-3d {
+    padding: 20px 40px 20px 80px;
+    border-radius: 10px;
+}
+
+    .btn-3d:before {
+        background: #fff;
+        color: #fcad26;
+        z-index: 2;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .btn-3d:after {
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        z-index: 1;
+        left: 55px;
+        top: 50%;
+        margin: -10px 0 0 -10px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .btn-3d:active:before {
+        color: #f58500;
+    }
+
+    .btn-3d:active {
+        top: 0;
+    }
+
+        .btn-3d:active:after {
+            left: 60px;
+        }
+
+
+.navigation, .nav-content {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(11, 24, 34, 0.83);
+    border-bottom: 2px solid #f58500;
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+.reg {
+    padding-top: 15px;
+    clear:right;
+}
+
+.fix {
+    position: fixed;
+}
+
+a.head-link {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    padding: 15px;
+    color: #fff;
+}
+
+.right-link {
+    float: right;
+    padding-right: 50px;
+}
+
+.get-started {
+    background: url('images/quizbg.jpg') no-repeat;
+    width: 100%;
+    opacity: 1;
+    background-size: 100%;
+    position: fixed;
+    top: 70px;
+    border-bottom: 5px solid #f58500;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 60px 5px rgba(61, 45, 16, 0.95);
+}
+
+.start-play {
+    position:absolute;
+    top:70px;
+    background-color: rgba(29, 25, 25, 0.8);
+    border-radius: 3px;
+    padding:30px;
+    height:380px;
+}
+
+.rel-div {
+    padding-top:70px;
+    padding-left:600px;
+}
+.start-content {
+    background-color: rgba(29, 25, 25, 0.8);
+    border-radius: 3px;
+    left: 40%;
+    width:80%;
+    padding: 30px;
+}
+
+.start-play-rules {
+    padding-top:60px;
+    padding-left:20px;
+    padding-right:20px;
+    width:700px;
+}
+
+.start-play-btn {
+    padding-top:40px;
+    padding-left:200px;
+}
+.play {
+    padding-left:570px;
+    padding-top:30px;
+    padding-bottom:100px;
+}
+
+p.font {
+    font-size:30px;
+}
+
+h1.start {
+    color: #f29e0d;
+    font-weight: bolder;
+}
+
+p.start {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+.glyphicon.glyphicon-play {
+    font-size: 16px;
+}
+
+.glyphicon.glyphicon-play-circle {
+    font-size: 18px;
+}
+
+.btn-text {
+    font-size: 20px;
+}
+
+.cl-effect-20 a {
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    perspective: 800px;
+}
+
+.cl-effect-20 a span {
+    position: relative;
+    display: inline-block;
+    padding: 3px 15px 0;
+    background: #fcad26;
+    border-radius: 2px;
+    box-shadow: inset 0 3px #2f4351;
+    -webkit-transition: background 0.6s;
+    -moz-transition: background 0.6s;
+    transition: background 0.6s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.cl-effect-20 a span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    color: #2f4351;
+    content: attr(data-hover);
+    -webkit-transform: rotateX(270deg);
+    -moz-transform: rotateX(270deg);
+    transform: rotateX(270deg);
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition: -moz-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+    pointer-events: none;
+}
+
+.cl-effect-20 a:hover span,
+.cl-effect-20 a:focus span {
+    background: rgba(61, 45, 16, 0.95);
+    border-radius: 2px;
+}
+
+.cl-effect-20 a:hover span::before,
+.cl-effect-20 a:focus span::before {
+    border-radius: 2px;
+    -webkit-transform: rotateX(10deg);
+    -moz-transform: rotateX(10deg);
+    transform: rotateX(10deg);
+}
+
+.home-content {
+    background-color:#1d1919;
+    position:absolute;
+    top:680px;
+    width:100%;
+}
+
+.user-head {
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.user-head p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.row-content {
+    padding-left:90px;
+}
+
+.user-content {
+    background-color: rgba(221, 221, 221, 0.7);
+    border: 1px solid rgba(61, 45, 16, 0.95);
+    padding:10px;
+    width:300px;
+    margin:7px;
+    height:300px;
+}
